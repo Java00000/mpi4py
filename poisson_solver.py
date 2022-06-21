@@ -107,7 +107,7 @@ def jacobi_solver_mpi(matrices, cli_params):
         if cli_params.is_termination_prec():
 
             if strip_maxresiduum < cli_params.get_termination_value():
-                #comm.Allreduce(strip_maxresiduum, MPI.MAX)
+                
                 iterations = 0
         else:
             iterations -= 1
